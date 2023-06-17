@@ -35,7 +35,7 @@ body {
 }
 
 .slider {
-    -webkit-appearance: none;
+    --webkit-appearance: none;
     width: 100%;
     border-radius: 5px;
     background: #DFDFDF;

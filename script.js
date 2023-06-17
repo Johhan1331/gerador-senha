@@ -30,14 +30,12 @@ function generatePassword() {
 }
 
 function copyPassword() {
-
     navigator.clipboard.writeText(novaSenha).then(() => {
-        console.log('Copiado com sucesso!')
-        alert("Senha copiada com sucesso!")
+        swal("Sucesso!", "Copiado com sucesso!", "success");
     }).catch((error) => {
-            console.log(error)
+        console.log(error)
+        swal("Erro!", "Erro ao copiar mensagem", "error");
     })
-
 }
 
 document.querySelector('#container-password').addEventListener("click", copyPassword)
